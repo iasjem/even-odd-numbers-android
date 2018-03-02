@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Even Or Odd?</string>
+    <string name="default_text_results">Enter the value of N:</string>
+    <string name="name_button_submit">Submit</string>
+    <string name="name_button_exit">Exit</string>
+
+    <string name="content_app_name">Contains name of app</string>
+    <string name="content_button_submit">Submit the value of N</string>
+    <string name="content_button_exit">Exit application</string>
+    <string name="content_text_results">Contains result for N</string>
+    <string name="content_user_answer">Key the value of N</string>
+</resources>
