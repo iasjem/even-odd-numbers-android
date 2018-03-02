@@ -12,7 +12,7 @@ public class MainActivity extends AppCompatActivity {
 
     EditText userAnswer;
     TextView resultForNumber;
-    Button buttonSubmit;
+    Button buttonSubmit, buttonExit;
     private int n;
 
     @Override
@@ -23,6 +23,7 @@ public class MainActivity extends AppCompatActivity {
         userAnswer = findViewById(R.id.userAnswer);
         resultForNumber = findViewById(R.id.resultOfNumber);
         buttonSubmit = findViewById(R.id.buttonSubmit);
+        buttonExit = findViewById(R.id.buttonExit);
 
         buttonSubmit.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -33,11 +34,23 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        buttonExit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
+
     }
 
     private String evenOrOdd(int n){
-        if (n % 2 == 0) {  return "EVEN";  }
-        return "ODD";
+        if (n ==0) {
+            return "Neither ODD nor EVEN";
+        } else {
+            if (n % 2 == 0) {  return "EVEN";  }
+            else { return "ODD"; }
+        }
+
     }
 
 }
